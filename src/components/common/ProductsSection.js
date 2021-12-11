@@ -756,7 +756,7 @@ function getSelectedPrice({products, selectedProduct, selectedInterval}) {
     return selectedPrice;
 }
 
-function getActiveInterval({portalPlans, selectedInterval = 'year'}) {
+function getActiveInterval({portalPlans, selectedInterval = 'month'}) {
     if (selectedInterval === 'month' && portalPlans.includes('monthly')) {
         return 'month';
     }
